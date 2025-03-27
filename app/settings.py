@@ -17,7 +17,7 @@ SECRET_KEY = 'django-insecure-7=7#$(qkecc0i!hc8@b2kv%n96376-+er-fallpdqum4hi%#0w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['flixapi.leonardobatista96.com.br']
 
 
 # Application definition
@@ -135,3 +135,7 @@ SIMPLE_JWT = {
     "ACESS_TOKEN_LIFETIME": timedelta(days=1),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=7)
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://flixapi.leonardobatista96.com.br",
+]
